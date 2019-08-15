@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.7.RELEASE'
 	id 'java'
 	id 'war'
+	id 'groovy'
 }
 
 group = 'com.svoeller'
@@ -27,4 +28,5 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.codehaus.groovy:groovy-all:2.5.8'
 }
